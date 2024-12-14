@@ -1,0 +1,147 @@
+main {
+    background-color: #F7ECDE;
+}
+
+h1 {
+    color: #352E28;
+    font-family: "Pacifico", cursive;
+    font-size: 50px;
+    line-height: 60px;
+    vertical-align: baseline;
+    font-weight: 500;
+    position: relative;
+    z-index: 1;
+}
+
+h1::after {
+    content: "";
+    width: 25%;
+    height: 20px;
+    position: absolute;
+    top: 50px;
+    left: 37%;
+    background-color: #FEC260;
+    z-index: -1111111;
+}
+
+.code-bady {
+    border-top: 1px dashed black;
+}
+
+.code-bady h2 {
+    /* background:linear-gradient( to right,#3FA55B,#B2AC4A); */
+    background: linear-gradient(to right, #3FA55B, #8A9E23);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-family: "Righteous", sans-serif;
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: 500;
+    vertical-align: baseline;
+}
+
+.code-bady label {
+    font-family: "PT Sans Caption" sans-serif;
+    line-height: 24px;
+    font-weight: 600;
+}
+
+.sub-btn {
+    background-color: #D1512D;
+
+    width: 150px;
+    transition: all 10s;
+
+}
+
+/* .sub-btn :hover{
+    content: "";
+    background-color: #5a1705;
+} */
+.code-bady {
+    padding-top: 15px;
+    border-bottom: 1px dashed black;
+}
+
+
+#btn-visit {
+    background-color: #8A9E23;
+    color: white;
+}
+
+#btn-delete {
+    background-color: #EB1D36;
+    color: white;
+}
+
+
+
+
+.circle {
+
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: inline-block;
+    ;
+
+
+}
+
+.red {
+    background-color: red;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.green {
+    background-color: green;
+    margin-left: auto;
+}
+
+
+
+
+
+.overlay {
+    position: absolute;
+    top: 420px;
+    left: 450px;
+    width: 500px;
+    height: 250px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    padding: 40px;
+
+}
+
+
+.line1 {
+    color: #352E28;
+    font-family: "Bree Serif", serif;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 27.3px;
+
+    text-decoration: none solid rgb(53, 46, 40);
+    text-align: start;
+    padding: 0px 0px 8px;
+}
+
+
+.line2 {
+    color: #212529;
+    font-family:"PT Sans Caption",sans-serif;
+    font-size: 18px;
+    line-height:27px;
+    padding:10px 0px 0px;
+    font-weight:400;
+    text-align:left;
+
+}
