@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Bookmarker helps you save, organize, and manage your favorite websites in one place. Quickly bookmark useful links and access them anytime." />
+    <meta name="keywords" content="bookmark manager, save websites, favorite websites, bookmark organizer, web links" />
+
+
+    <title>Bookmark</title>
+
+
+    <!-- font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Pacifico&family=Righteous&display=swap"
+        rel="stylesheet">
+    <!--  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- tailwind link -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- css  -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+
+    <main class="bg-body-pinky py-10">
+        <div class="mx-auto base-page">
+
+
+            <h1 class=" py-5 text-center ">
+                <span class="title-page">Bookmarker</span>
+            </h1>
+
+
+            <div class="contant-page py-5 flex  flex-col justify-center items-center mt-12 mx-auto">
+                <h2 class="head-name-content-page">
+                    <i class="fa-solid fa-bookmark"></i>
+                    Bookmark your favorite sites
+                    <i class="fa-solid fa-bookmark"></i>
+                </h2>
+                <div class="site-name w-full flex flex-col justify-center pb-8 pt-4 px-2">
+                    <label for="bookmarkName" class="pb-2 font-semibold">
+                        <i class="fa-solid fa-book-bookmark pe-2"></i>
+                        Site Name
+                    </label>
+                    <input type="text" oninput="validateName()" placeholder="Bookmark Name"
+                        class=" h-10 bg-white rounded-md  border border-gray-300 ps-2.5" id="bookmarkName">
+                </div>
+                <div class="site-url w-full flex flex-col justify-center px-2">
+                    <label for="bookmarkURL" class="pb-2 font-semibold">
+                        <i class="fa-solid fa-link pe-2"></i>
+                        Site URL
+                    </label>
+                    <input type="url" oninput="validateUrl()" placeholder="Website URL"
+                        class=" h-10 bg-white rounded-md border border-gray-300 ps-2.5" id="bookmarkURL">
+                </div>
+                <button class="px-12 py-2 my-7 bg-orange-700 border border-orange-800 text-white rounded"
+                    onclick="addData()">Submit</button>
+            </div>
+
+            <div class="table-content mx-auto">
+                <table class=" w-full mt-4 text-center bg-white">
+                    <thead class="border-b border-gray-300">
+                        <tr>
+                            <th class="capitalize">index</th>
+                            <th class="capitalize">Website Name</th>
+                            <th class="capitalize">Visit</th>
+                            <th class="capitalize">Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableContent">
+
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+
+
+
+        <div class="box-conent fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 
+                w-[450px] bg-white p-8 rounded-md shadow-2xs z-50 hidden" id="alertBox">
+            <header class=" flex justify-between items-center mb-4">
+                <div class="circles flex">
+                    <span class="rounded-full me-2 bg-red-600 h-5 w-5"></span>
+                    <span class="rounded-full me-2  bg-orange-500 h-5 w-5"></span>
+                    <span class="rounded-full me-2  bg-green-600 h-5 w-5"></span>
+                </div>
+                <button onclick="closeBox()" class="border-0">
+                    <i class="fa-solid fa-xmark close "></i>
+                </button>
+            </header>
+            <p class="m-0 pb-2">
+                Site Name or Url is not valid, Please follow the rules below :
+            </p>
+            <ol class="rules list-none m-0">
+                <li>
+                    <i class="fa-regular fa-circle-right p-2 text-red-800"></i>Site name must
+                    contain at least 3 characters
+                </li>
+                <li>
+                    <i class="fa-regular fa-circle-right p-2 text-red-800"></i>Site URL must be a
+                    valid one
+                </li>
+            </ol>
+        </div>
+    </main>
+
+
+
+
+
+
+
+
+
+
+    <!-- js link -->
+    <script src="./js/main.js">
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,9 @@
+{
+    "tailwindCSS.emmetCompletions": true,
+    "tailwindCSS.experimental.classRegex": [
+
+    ],
+    "files.exclude": {
+        "**/.html": true
+    }
+}
